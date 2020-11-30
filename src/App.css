@@ -1,38 +1,123 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgba(52, 73, 94,1.0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.App h1 {
+  font-size: 60px;
+  color: #ddd;
+  font-family: 'Itim', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  width: 80%;
+  max-width: 800px;
+  margin: 3em auto;
+  display: block;
+  background-color: rgba(44, 62, 80,1.0);
+  padding: 1em;
+  text-align: center;
+}
+
+.form tr, .form td {
+  align-self: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.form-group div {
+  width: 50%;
+}
+
+.form-group label {
+  color: #ddd;
+  font-size: 18px;
+}
+
+.form-group input[type=checkbox] {
+  transform: scale(1.5);
+} 
+
+.form-group input[type=number] {
+  padding: 10px 20px;
+  width: 50%;
+  display: block;
+  outline: 0;
+  margin: 0 auto;
+} 
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  margin-top: 1em;
+  background-color: rgba(39, 174, 96,1.0);
+  outline: 0;
+  border: none;
+  font-size: 1.4rem;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resultsDiv {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background-color: red;
+  display: block;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.results {
+  padding: 1em 2em;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(52, 73, 94,1.0);
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.tips {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.tips h4 {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: .3em;
+}
+
+.tips p {
+  color: #ddd;
+  font-size: 15px;
+  text-align: left;
 }
